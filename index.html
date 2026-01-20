@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#111827" />
+  <title>Экзамен — ответы (1–61)</title>
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" href="./icons/icon-192.png" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">ИС</div>
+      <div class="brand-text">
+        <div class="title">Экзамен: ответы (1–61)</div>
+        <div class="subtitle">Оффлайн-справочник</div>
+      </div>
+    </div>
+    <div class="search-wrap">
+      <input id="search" class="search" type="search" placeholder="Поиск по названию вопроса…" autocomplete="off" />
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="hint" id="hint">
+        Нажми на вопрос, чтобы открыть ответ. Поиск — по названию вопроса.
+      </div>
+      <ul id="qList" class="q-list"></ul>
+      <div class="footer">
+        <span id="offlineStatus" class="status">…</span>
+      </div>
+    </aside>
+
+    <main class="content" id="content">
+      <div class="content-head">
+        <button id="backBtn" class="back" aria-label="Назад">← Список</button>
+        <div id="crumb" class="crumb"></div>
+      </div>
+      <div id="qContent" class="q-content">
+        <div class="empty">
+          <h2>Выбери вопрос слева</h2>
+          <p>Здесь откроется текст ответа с картинками.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
