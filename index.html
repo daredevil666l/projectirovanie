@@ -18,6 +18,15 @@
         <div class="subtitle">Оффлайн-справочник</div>
       </div>
     </div>
+    <div class="progress-wrap" aria-label="Прогресс чтения">
+      <div class="progress-head">
+        <span class="progress-label">Прочитано</span>
+        <span id="progressCount" class="progress-count">0/0</span>
+      </div>
+      <div class="progress-bar">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+    </div>
     <div class="search-wrap">
       <input id="search" class="search" type="search" placeholder="Поиск по названию вопроса…" autocomplete="off" />
     </div>
@@ -27,6 +36,10 @@
     <aside class="sidebar" id="sidebar">
       <div class="hint" id="hint">
         Нажми на вопрос, чтобы открыть ответ. Поиск — по названию вопроса.
+      </div>
+      <div class="filters">
+        <button id="filterFavBtn" class="chip" type="button" aria-pressed="false">Только избранные: выкл</button>
+        <div class="filters-note">Прогресс и избранное сохраняются на устройстве (оффлайн)</div>
       </div>
       <ul id="qList" class="q-list"></ul>
       <div class="footer">

@@ -1,5 +1,5 @@
 /* Offline-first Service Worker (precache everything) */
-const CACHE_NAME = 'pwa-exam-v1';
+const CACHE_NAME = 'pwa-exam-v2';
 const PRECACHE_URLS = [
   "./",
   "./404.html",
